@@ -109,11 +109,13 @@ body {
     background-color: #ED5772;
     border-radius: 15px;
     padding: 10px;
+    transition: 1s;
 }
 
 .hero a:hover {
     background-color: #EB4A80;
     color: #FBF2F2;
+    padding: 15px;
 }
 
 /* MAIN(INICIO)/PROPUESTA(DESKTOP) */
@@ -247,12 +249,14 @@ body {
 .hero_detras_tba h1 {
     font-size: 60px;
     font-weight: 700;
+    color: #232744;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 10px 0 10px;
 }
 
 .hero_detras_tba p {
+    color: #232744;
     text-align: center;
 }
 
@@ -269,6 +273,12 @@ body {
     width: 300px;
     height: 518px;
     margin: 20px;
+    transition: 1s;
+}
+
+.equipo article:hover {
+    width: 320px;
+    height: 538px;
 }
 
 .equipo article div {
@@ -284,6 +294,11 @@ body {
     margin-bottom: 10px;
     width: 340px;
     height: 352px;
+    transition: 1s;
+}
+
+.equipo article div:hover {
+    background-color: #F3CFD5;
 }
 
 .equipo article div h2 {
@@ -322,12 +337,14 @@ body {
 }
 
 .hero_reviews h1 {
+    color: #232744;
     font-size: 60px;
     font-weight: 700;
     padding-bottom: 20px;
 }
 
 .hero_reviews p {
+    color: #232744;
     text-align: center;
 }
 
@@ -408,11 +425,16 @@ body {
 }
 
 .hero_prox_fechas h1 {
+    color: #232744;
     font-size: 60px;
     font-weight: 700;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 10px 0 10px;
+}
+
+.hero_prox_fechas p {
+    color: #232744;
 }
 
 /* MAIN(PROXIMAS_FECHAS)/FECHAS(DESKTOP) */
@@ -489,12 +511,14 @@ body {
 }
 
 .hero_salidas h1 {
+    color: #232744;
     font-size: 60px;
     font-weight: 700;
     padding: 0 10px 20px 10px;
 }
 
 .hero_salidas p {
+    color: #232744;
     text-align: center;
     padding: 0 10px 0 10px;
 }
