@@ -191,6 +191,8 @@ body {
 
 .recorridos article > div:hover {
     transform: scale(1, 1);
+    width: 380px;
+    background-color: #F3CFD5;
 }
 
 .recorridos article div p {
