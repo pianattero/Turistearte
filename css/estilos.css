@@ -129,7 +129,7 @@ body {
 .propuesta div h2 {
     color: #232744;
     padding-bottom: 20px;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 .propuesta div div {
@@ -142,16 +142,18 @@ body {
 .propuesta div div p {
     color: #232744;
     text-align: center;
-    padding: 10px 50px;
+    padding: 10px 10px;
 }
 
 /* MAIN(INICIO)/GALERIA(DESKTOP) */
-#carouselExampleCaptions {
-    margin: 0px 200px;
+#carouselExampleIndicators {
+    margin: 0 100px;
+    height: calc(100vh - 350px);
 }
 
 .carousel-item img {
-    border-radius: 10%;
+    border-radius: 15px;
+    height: calc(100vh - 350px);
 }
 
 /* MAIN(INICIO)/RECORRIDOS(DESKTOP) */
@@ -159,6 +161,7 @@ body {
     text-align: center;
     color: #232744;
     padding-top: 30px;
+    width: auto;
 }
 
 .recorridos article {
@@ -293,7 +296,7 @@ body {
     box-shadow: 11px 11px 0px -4px rgba(237,87,114,0.52);
     -webkit-box-shadow: 11px 11px 0px -4px rgba(237,87,114,0.52);
     -moz-box-shadow: 11px 11px 0px -4px rgba(237,87,114,0.52);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 340px;
     height: 352px;
     transition: 1s;
@@ -306,7 +309,9 @@ body {
 .equipo article div h2 {
     text-transform: uppercase;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .equipo article div img {
@@ -319,7 +324,6 @@ body {
 .equipo article p {
     text-align: center;
     font-size: 14px;
-    padding: 4px;
 }
 
 /* MAIN(REVIEWS)/HERO(DESKTOP) */
@@ -486,7 +490,7 @@ body {
     font-weight: 700;
     padding: 10px;
     border-radius: 15px;
-    color: black;
+    color: #232744;
     background-color: #F7629B;
 
 }
@@ -494,6 +498,11 @@ body {
 .fecha a:hover {
     color: white;
     background-color: #F53D84;
+}
+
+#alerta {
+    color: #F7629B;
+    background-color: #232744;
 }
 
 /* MAIN(SALIDAS)/HERO(DESKTOP) */
@@ -554,6 +563,21 @@ body {
     padding: 5px 50px;
 }
 
+.card {
+    width: 330px;
+    margin: 5px;
+    border-radius: 10px;
+    border: solid 2px #F7629B;
+    align-items: center;
+    background-color: #FEFBFB;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 3px;
+}
+
 /* FOOTER(DESKTOP) */
 .footer {
     grid-area: footer;
@@ -577,14 +601,13 @@ body {
 
 .redes h5 {
     color: #232744;
-    padding-bottom: 5px;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .redes a img {
     width: 50px;
-    margin-left: 10px;
     transition: 1s;
+    margin-left: 3px;
 }
 
 .redes a img:hover {

@@ -8,6 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <link rel="stylesheet" href="../css_bs/bootstrap.css">
+
         <link rel="stylesheet" href="../css/estilos.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -41,89 +43,84 @@
                 <p>Conocé todas las experiencias que te ofrecemos dentro de nuestra ciudad!</p>
             </section>
             <section>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/terror1.png" alt="Tour del Terror">
-                        <img src="../images/terror2.png" alt="Tour del Terror">
+                <!-- EMPIEZA -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-6">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/terror1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tour del Terror</h5>
+                            <p class="card-text">Saldremos caminando por las calles del barrio de Recoleta y nos detendremos en aquellos sitios con historias tenebrosas. Se las revelaremos... En algunos casos acompañados por ciertos personajes icónicos del escenario morboso de esta ciudad.</p>
+                            <p>Ademas de las entretenidas historias pasaremos por los lugares mas emblemáticos del barrio: el Cementerio, Café La Biela, Facultad de Ingeniería, la Isla de Recoleta, Plaza Mitre, Biblioteca Nacional, Plaza Francia, la Facultad de Derecho y las pintorescas callecitas del barrio.</p>
+                        </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2>Tour del Terror</h2>
-                        <p>Saldremos caminando por las calles del barrio de Recoleta y nos detendremos en aquellos sitios con historias tenebrosas. Se las revelaremos... En algunos casos acompañados por ciertos personajes icónicos del escenario morboso de esta ciudad.</p>
-                        <p>Ademas de las entretenidas historias pasaremos por los lugares mas emblemáticos del barrio: el Cementerio, Café La Biela, Facultad de Ingeniería, la Isla de Recoleta, Plaza Mitre, Biblioteca Nacional, Plaza Francia, la Facultad de Derecho y las pintorescas callecitas del barrio.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/amores1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tour de Amores Turbios</h5>
+                                <p class="card-text">Un recorrido a pie por el aristocrático barrio de Retiro donde iremos descubriendo las historias de amores prohibidos, infidelidades, celos, venganza y traición mas polémicas de los romances rioplatenses.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/amores1.png" alt="Tour Amores Turbios">
-                        <img src="../images/amores2.png" alt="Tour Amores Turbios">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/chalecito1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tour Chalecito&Obelisco</h5>
+                                <p class="card-text">El obelisco y chalecito son dos Amores a distancia que se nutren el uno al otro. El obelisco como monumento central de la ciudad y referente del país hizo de ese punto geográfico, un polo de atracción para todos los eventos destacados del país.</p>
+                                <p>El Chalecito a lo alto de un edifico, fruto de un caprichito de un inmigrante próspero, no sería el mismo si no estuviera a lo alto del gran monumento puntiagudo, que atraería toda la escena política, social y deportiva a sus narices.</p>
+                                <p>A su vez, el obelisco no sería el mismo sin su observador fiel que los espía minuto a minuto y hace de su paisaje aún más peculiar.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2>Tour Amores Turbios</h2>
-                        <p>Un recorrido a pie por el aristocrático barrio de Retiro donde iremos descubriendo las historias de amores prohibidos, infidelidades, celos, venganza y traición mas polémicas de los romances rioplatenses.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/arte1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tour Arte Urbano por Palermo</h5>
+                                <p class="card-text">Salimos a las calles del hermoso barrio de Palermo Soho a buscar murales, hablar de los artistas, de las ideas que transmiten y del escenario de arte urbano porteño.</p>
+                                <p>Te vamos a mostrar las callecitas mas secretas e intervenidas de la ciudad!</p>
+                                <p>Acercarnos a caminar los barrios de nuestras ciudad, nos ayuda a conocer nuestras raices, nuestra cultura y la historia que nos fueron formando a través del tiempo.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/chalecito1.png" alt="Tour Chalecito">
-                        <img src="../images/chalecito2.png" alt="Tour Chalecito">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/comida1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tour de Comida Porteña</h5>
+                                <p class="card-text">Estás en Buenos Aires y queres probar todas nuestras comidas? Mate, bizcochos, empanadas, locro, asado, alfajor, Dulce de leche y mucho más!</p>
+                                <p>Tenemos muchas comidas y todas tienen su historia de origen! Haremos un recorrido de sabores por la historia de Buenos Aires!</p>
+                                <p>Nos adentraremos en el hermoso y antiguo Mercado de San Telmo, e iremos conociendo los diferentes puestos del mismo y descubriendo la historia de los diferentes bocados, ingredientes y recetas. Probaremos comidas diferentes criollas, así como tambien la comida mas popular que nos trajeron los inmigrantes que se fusionó con el paladar porteño, entre otras!</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2>Tour Chalecito&Obelisco</h2>
-                        <p>El obelisco y chalecito son dos Amores a distancia que se nutren el uno al otro. El obelisco como monumento central de la ciudad y referente del país hizo de ese punto geográfico, un polo de atracción para todos los eventos destacados del país.</p>
-                        <p>El Chalecito a lo alto de un edifico, fruto de un caprichito de un inmigrante próspero, no sería el mismo si no estuviera a lo alto del gran monumento puntiagudo, que atraería toda la escena política, social y deportiva a sus narices.</p>
-                        <p>A su vez, el obelisco no sería el mismo sin su observador fiel que los espía minuto a minuto y hace de su paisaje aún más peculiar.
-                        </p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/mate1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Experiencia Mate</h5>
+                                <p class="card-text">Degustación, ritual y compartida.</p>
+                                <p>Vamos a probar diferentes tipos de mate, mate con hierbas, mate dulce, mate cocido e incluso tereré. Siempre acompañados de las típicos bizcochos argentinos que acompañamos con mate.</p>
+                                <p>Mate se trata de compartir, conversar y hacer amigos, por eso haremos todo este ritual de una manera fluida y con espacio hermoso para que eso suceda.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/arte1.png" alt="Arte Urbano Palermo">
-                        <img src="../images/arte2.png" alt="Arte Urbano Palermo">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../images/metro1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tour Arte en el Metro de Buenos Aires</h5>
+                                <p class="card-text">Te invitamos a conocer la galería de arte mas extensa de la ciudad: El Subterráneo de Buenos Aires.</p>
+                                <p>Desde sus inicios se ha promovido el arte en los Subtes de esta ciudad, hasta el punto que hoy en día sus 108 estaciones tienen obras de artes de los mas variados artistas y técnicas.</p>
+                                <p>Proponemos un recorrido por las diferentes estaciones descubriendo cuál es la propuesta de arte del Subte, qué ejes hay en cada línea y atravesando diferentes formatos y técnicas, incluyendo obras desde artistas contemporáneos consagrados, como artistas urbanos del underground, y desde murales convencionales a cerámicos, esculturas, mosaicos, fileteado, orfebrería, historietas y mucho mas.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2>Tour Arte Urbano por Palermo</h2>
-                        <p>Salimos a las calles del hermoso barrio de Palermo Soho a buscar murales, hablar de los artistas, de las ideas que transmiten y del escenario de arte urbano porteño.</p>
-                        <p>Te vamos a mostrar las callecitas mas secretas e intervenidas de la ciudad!</p>
-                        <p>Acercarnos a caminar los barrios de nuestras ciudad, nos ayuda a conocer nuestras raices, nuestra cultura y la historia que nos fueron formando a través del tiempo.</p>
-                    </div>
-                </article>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/comida1.png" alt="Tour Comida Porteña">
-                        <img src="../images/comida2.png" alt="Tour Comida Porteña">
-                    </div>
-                    <div>
-                        <h2>Tour de Comida Porteña</h2>
-                        <p>Estás en Buenos Aires y queres probar todas nuestras comidas? Mate, bizcochos, empanadas, locro, asado, alfajor, Dulce de leche y mucho más!</p>
-                        <p>Tenemos muchas comidas y todas tienen su historia de origen! Haremos un recorrido de sabores por la historia de Buenos Aires!</p>
-                        <p>Nos adentraremos en el hermoso y antiguo Mercado de San Telmo, e iremos conociendo los diferentes puestos del mismo y descubriendo la historia de los diferentes bocados, ingredientes y recetas. Probaremos comidas diferentes criollas, así como tambien la comida mas popular que nos trajeron los inmigrantes que se fusionó con el paladar porteño, entre otras!</p>
-                    </div>
-                </article>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/mate1.png" alt="Tour Mate">
-                        <img src="../images/mate2.png" alt="Tour Mate">
-                    </div>
-                    <div>
-                        <h2>Experiencia Mate</h2>
-                        <p>Degustación, ritual y compartida.</p>
-                        <p>Vamos a probar diferentes tipos de mate, mate con hierbas, mate dulce, mate cocido e incluso tereré. Siempre acompañados de las típicos bizcochos argentinos que acompañamos con mate.</p>
-                        <p>Mate se trata de compartir, conversar y hacer amigos, por eso haremos todo este ritual de una manera fluida y con espacio hermoso para que eso suceda.</p>
-                    </div>
-                </article>
-                <article class="salidas">
-                    <div id="imagenes_salidas">
-                        <img src="../images/metro1.png" alt="Tour Metro">
-                        <img src="../images/metro2.png" alt="Tour Metro">
-                    </div>
-                    <div>
-                        <h2>Tour Arte en el Metro de Buenos Aires</h2>
-                        <p>Te invitamos a conocer la galería de arte mas extensa de la ciudad: El Subterráneo de Buenos Aires.</p>
-                        <p>Desde sus inicios se ha promovido el arte en los Subtes de esta ciudad, hasta el punto que hoy en día sus 108 estaciones tienen obras de artes de los mas variados artistas y técnicas.</p>
-                        <p>Proponemos un recorrido por las diferentes estaciones descubriendo cuál es la propuesta de arte del Subte, qué ejes hay en cada línea y atravesando diferentes formatos y técnicas, incluyendo obras desde artistas contemporáneos consagrados, como artistas urbanos del underground, y desde murales convencionales a cerámicos, esculturas, mosaicos, fileteado, orfebrería, historietas y mucho mas.</p>
-                    </div>
-                </article>
-            </section>
+                </div>
+                <!-- TERMINA -->
         </main>
 
 <!------ FOOTER ------>
@@ -131,11 +128,13 @@
         <footer class="footer">
             <a href="../index.html"><img src="../images/anteojos.png" alt="Logo Turistearte"></a>
             <div class="redes">                     
-                <h5>CONTACTANOS</h5>
+                <h5 class="h6">CONTACTANOS</h5>
                 <a href="https://www.instagram.com/turistearteba/"><img src="../images/instagram.png" alt="Logo Instagram"></a>
                 <a href="https://api.whatsapp.com/send?phone=5491121687227&text="><img src="../images/whatsapp.png" alt="Logo WhatsApp"></a>
             </div>
         </footer>
+
+        <script src="../js/bootstrap.js"></script>
     </body>
 
 
