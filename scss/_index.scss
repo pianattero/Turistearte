@@ -106,6 +106,95 @@
     }
 }
 
+/* MAIN(INICIO)/GALERIA(DESKTOP) */
+.galeria {
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        padding: 30px 0 30px 0;
+        img {
+            width: 400px;
+            padding: 10px;
+            border-radius: 10%;
+        }
+    }
+}
+
+/* MAIN(INICIO)/RECORRIDOS(DESKTOP) */
+.recorridos {
+    h2 {
+        text-align: center;
+        color: $color_texto;
+        padding-bottom: 30px;
+    }
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 30px 30px 50px 30px;
+            width: 350px;
+            height: 600px;
+            border: solid 2px #ED5772;
+            border-radius: 15px;
+            box-shadow: 11px 11px 0px -4px rgba(237,87,114,0.52);
+            -webkit-box-shadow: 11px 11px 0px -4px rgba(237,87,114,0.52);
+            -moz-box-shadow: 11px 11px 0px -4px rgba(237,87,114,0.52);
+            transition: 1s;
+            &:hover {
+                transform: scale(1, 1);
+                width: 380px;
+                background-color: #F3CFD5;
+            }
+        }
+        div {
+            p {
+                color: $color_texto;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+                padding: 10px 40px;
+            }
+            a {
+                text-decoration: none;
+                color: $color_texto;
+                font-weight: 700;
+                background-color: $boton_inicio;
+                border-radius: 15px;
+                margin-bottom: 10px;
+                padding: 10px;
+                &:hover {
+                    background-color: $boton_final;
+                    color: $texto_boton_final;
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    color: $color_texto;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 10px 10px 20px 10px;
+                }
+                img {
+                    width: 320px;
+                    height: 320px;
+                    border-radius: 5%;
+                }
+            }
+        }
+    }
+}
+
+
 /* FOOTER(DESKTOP) */
 .footer {
     grid-area: footer;
