@@ -1,4 +1,8 @@
-@import "estructura_base";
-@import "colores";
-@import "index";
-@import "media_queries";
+@import "./base/variables";
+@import "./base/estructura_base";
+@import "./pages/index";
+@import "./pages/detras_de_tba";
+@import "./pages/reviews";
+@import "./pages/proximas_fechas";
+@import "./pages/salidas";
+@import "./base/media_queries";

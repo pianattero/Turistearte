@@ -1,0 +1,142 @@
+/* MAIN(SALIDAS)/HERO(DESKTOP) */
+.hero_salidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+    h1 {
+        color: $color_texto;
+        font-size: 60px;
+        font-weight: 700;
+        padding: 0 10px 20px 10px;
+    }
+    p {
+        color: $color_texto;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+}
+
+/* MAIN(SALIDAS)/SALIDAS(DESKTOP) */
+.hero_terror {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/terror1.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+    transition: 1s;
+    &:hover {
+        transform: scale(1, 1);
+    }
+}
+
+.hero_amores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/amores1.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.hero_chalecito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/chalecito2.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.hero_palermo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/arte2.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.hero_comida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/comida1.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.hero_mate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/mate2.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.hero_metro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.233)), url(../images/metro2.png);
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.salidas {
+    article {
+        div {
+            p {
+                text-align: center;
+                line-height: 1.6;
+                margin: 0 50px;
+            }
+        }
+        h2 {
+            text-transform: uppercase;
+            text-shadow: 2px 2px #EB4A80;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: #FFFBFB;
+        }
+    }
+}
