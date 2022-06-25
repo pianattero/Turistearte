@@ -941,10 +941,6 @@ body {
 /* GALERIA(INICIO)/MAX 420PX */
 .galeria div img {
     width: 100%;
-    padding: 0px;
-}
-.galeria div img {
-    width: 100%;
     padding: 0 0 10px 0;
 }
 }
@@ -975,6 +971,7 @@ body {
 .recorridos article div div img {
     width: 270px;
     height: 270px;
+}
 }
 
 @media screen and (max-width: 376px) {
