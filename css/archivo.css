@@ -72,10 +72,9 @@ body {
 .redes {
   align-items: center;
 }
-.redes h5 {
+.redes h4 {
   color: #232744;
   padding-bottom: 7px;
-  padding-left: 5px;
 }
 .redes a img {
   width: 50px;
@@ -86,7 +85,7 @@ body {
 }
 
 /* MAIN(INICIO)/HERO(DESKTOP) */
-.hero {
+.hero, .hero_salidas, .hero_prox_fechas, .hero_reviews, .hero_detras_tba {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,21 +99,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-.hero h1 {
+.hero h1, .hero_salidas h1, .hero_prox_fechas h1, .hero_reviews h1, .hero_detras_tba h1 {
   color: #232744;
   font-size: 60px;
   font-weight: 700;
   text-align: center;
   padding: 0 20px;
 }
-.hero p {
+.hero p, .hero_salidas p, .hero_prox_fechas p, .hero_reviews p, .hero_detras_tba p {
   color: #232744;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   padding: 40px 150px;
 }
-.hero a {
+.hero a, .hero_salidas a, .hero_prox_fechas a, .hero_reviews a, .hero_detras_tba a {
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -124,7 +123,7 @@ body {
   padding: 10px;
   transition: 1s;
 }
-.hero a:hover {
+.hero a:hover, .hero_salidas a:hover, .hero_prox_fechas a:hover, .hero_reviews a:hover, .hero_detras_tba a:hover {
   background-color: #EB4A80;
   color: #FBF2F2;
   padding: 15px;
@@ -238,26 +237,14 @@ body {
 
 /* MAIN(DETRAS_DE_TBA)/HERO(DESKTOP) */
 .hero_detras_tba {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 30vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 30px;
 }
 .hero_detras_tba h1 {
+  margin-top: 30px;
   font-size: 60px;
   font-weight: 700;
   color: #232744;
-  padding-bottom: 20px;
   text-align: center;
-  margin: 0 10px 0 10px;
 }
 .hero_detras_tba p {
   color: #232744;
@@ -319,24 +306,14 @@ body {
 
 /* MAIN(REVIEWS)/HERO(DESKTOP) */
 .hero_reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 30vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 30px;
 }
 .hero_reviews h1 {
+  margin-top: 30px;
   color: #232744;
   font-size: 60px;
   font-weight: 700;
-  padding-bottom: 20px;
+  text-align: center;
 }
 .hero_reviews p {
   color: #232744;
@@ -398,26 +375,14 @@ body {
 
 /* MAIN(PROXIMAS_FECHAS)/HERO(DESKTOP) */
 .hero_prox_fechas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 30vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 30px;
 }
 .hero_prox_fechas h1 {
+  margin-top: 30px;
   color: #232744;
   font-size: 60px;
   font-weight: 700;
-  padding-bottom: 20px;
   text-align: center;
-  margin: 0 10px 0 10px;
 }
 .hero_prox_fechas p {
   color: #232744;
@@ -476,29 +441,18 @@ body {
 
 /* MAIN(SALIDAS)/HERO(DESKTOP) */
 .hero_salidas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 30vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 30px;
 }
 .hero_salidas h1 {
+  margin-top: 30px;
   color: #232744;
   font-size: 60px;
   font-weight: 700;
-  padding: 0 10px 20px 10px;
+  text-align: center;
 }
 .hero_salidas p {
   color: #232744;
   text-align: center;
-  padding: 0 10px 0 10px;
 }
 
 /* MAIN(SALIDAS)/SALIDAS(DESKTOP) */
@@ -612,6 +566,12 @@ body {
 }
 
 /******** MEDIA QUERIES ********/
+@media screen and (max-width: 1105px) {
+  /* FECHAS(PROXIMAS_FECHAS)/MAX 1105PX*/
+  .fecha div {
+    width: 900px;
+  }
+}
 @media screen and (max-width: 1055px) {
   /* HEADER/MAX 1055PX*/
   .header {
@@ -628,23 +588,42 @@ body {
   .header nav ul li {
     padding-bottom: 20px;
   }
+  /* HERO(INICIO)/MAX 1055PX*/
+  .hero, .hero_detras_tba, .hero_reviews, .hero_prox_fechas, .hero_salidas {
+    height: calc(100vh - 170.41px);
+  }
+  /* OPINIONES(REVIEWS)/MAX 1055PX*/
+  .opinion div {
+    flex-direction: column;
+  }
 }
-/* HERO(INICIO)/MAX 1055PX*/
-.hero {
-  height: calc(100vh - 170.41px);
+@media screen and (max-width: 986px) {
+  /* FECHAS(PROXIMAS_FECHAS)/MAX 986PX*/
+  .fecha div {
+    width: 800px;
+  }
+  .fecha {
+    margin: 0px 80px 30px 80px;
+  }
 }
-
 @media screen and (max-width: 900px) {
   /* HERO(INICIO)/MAX 900PX */
-  .hero h1 {
+  .hero h1, .hero_detras_tba h1, .hero_reviews h1, .hero_prox_fechas h1, .hero_salidas h1 {
     font-size: 56px;
   }
-  .hero p {
+  .hero p, .hero_detras_tba p, .hero_reviews p, .hero_prox_fechas p, .hero_salidas p {
     font-size: 17px;
     padding: 40px 100px;
   }
-  .hero a {
+  .hero a, .hero_detras_tba a, .hero_reviews a, .hero_prox_fechas a, .hero_salidas a {
     font-size: 17px;
+  }
+  /* FECHAS(PROXIMAS_FECHAS)/MAX 900PX*/
+  .fecha div {
+    width: auto;
+  }
+  .fecha {
+    margin: 0px 40px 30px 40px;
   }
 }
 @media screen and (max-width: 819px) {
@@ -675,14 +654,14 @@ body {
     padding: 25px;
   }
   /* HERO(INICIO)/MAX 771PX */
-  .hero h1 {
+  .hero h1, .hero_detras_tba h1, .hero_reviews h1, .hero_prox_fechas h1, .hero_salidas h1 {
     font-size: 50px;
   }
-  .hero p {
+  .hero p, .hero_detras_tba p, .hero_reviews p, .hero_prox_fechas p, .hero_salidas p {
     font-size: 15px;
     padding: 40px 80px;
   }
-  .hero a {
+  .hero a, .hero_detras_tba a, .hero_reviews a, .hero_prox_fechas a, .hero_salidas a {
     font-size: 15px;
   }
 }
@@ -712,6 +691,13 @@ body {
   .propuesta div div p {
     padding: 10px;
   }
+  /* OPINIONES(REVIEWS)/MAX 693PX*/
+  .opinion div img {
+    width: 100%;
+  }
+  .opinion div div p {
+    padding: 20px 10px 0 10px;
+  }
 }
 @media screen and (max-width: 627px) {
   /* HEADER/MAX 627PX */
@@ -737,17 +723,33 @@ body {
   }
   .redes h5 {
     font-size: 12px;
-    padding-right: 0px;
-    padding-left: 5px;
+    margin: 0;
   }
   .redes a img {
     width: 45px;
+    margin: 0;
+  }
+  /* OPINIONES(REVIEWS)/MAX 585PX*/
+  .opinion {
+    margin: 20px 20px;
   }
 }
 @media screen and (max-width: 545px) {
   /* HERO(INCIO)/MAX 545PX */
-  .hero p {
+  .hero p, .hero_detras_tba p, .hero_reviews p, .hero_prox_fechas p, .hero_salidas p {
     padding: 40px 40px;
+  }
+}
+@media screen and (max-width: 502px) {
+  /* HERO(PROXIMAS_FECHAS)/MAX 502PX */
+  .hero_prox_fechas {
+    height: auto;
+  }
+  .hero_prox_fechas h1 {
+    margin-top: 20px;
+  }
+  .hero_prox_fechas p {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -764,8 +766,6 @@ body {
   }
   .redes h5 {
     font-size: 10px;
-    padding-right: 0px;
-    padding-left: 3px;
   }
   .redes a img {
     width: 35px;
@@ -773,13 +773,25 @@ body {
 }
 @media screen and (max-width: 420px) {
   /* HERO/MAX 420PX */
-  .hero p {
+  .hero p, .hero_detras_tba p, .hero_reviews p, .hero_prox_fechas p, .hero_salidas p {
     padding: 40px 40px;
   }
   /* GALERIA(INICIO)/MAX 420PX */
   .galeria div img {
     width: 100%;
     padding: 0 0 10px 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  /* HERO(DETRAS_DE_TBA)/MAX 414PX */
+  .hero_detras_tba {
+    height: auto;
+  }
+  .hero_detras_tba h1 {
+    margin-top: 20px;
+  }
+  .hero_detras_tba p {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -796,19 +808,19 @@ body {
 }
 @media screen and (max-width: 376px) {
   /* HERO(INICIO)/MAX 376PX */
-  .hero p {
+  .hero p, .hero_detras_tba p, .hero_reviews p, .hero_prox_fechas p, .hero_salidas p {
     padding: 30px 40px;
   }
 }
 @media screen and (max-width: 359px) {
   /* HERO(INICIO)/MAX 359PX */
-  .hero {
+  .hero, .hero_detras_tba, .hero_reviews, .hero_prox_fechas, .hero_salidas {
     height: auto;
   }
-  .hero h1 {
+  .hero h1, .hero_detras_tba h1, .hero_reviews h1, .hero_prox_fechas h1, .hero_salidas h1 {
     margin-top: 20px;
   }
-  .hero a {
+  .hero a, .hero_detras_tba a, .hero_reviews a, .hero_prox_fechas a, .hero_salidas a {
     margin-bottom: 20px;
   }
 }
