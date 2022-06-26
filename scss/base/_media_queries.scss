@@ -10,29 +10,6 @@
 }
 
 @media screen and (max-width: 1055px) {
-/* HEADER/MAX 1055PX*/
-    .header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        a {
-            img {
-                padding-left: 0px;
-            }
-        }
-        nav {
-            ul {
-                li {
-                    padding-bottom: 20px;
-                }
-            }
-        }
-    }
-
-
 /* HERO(INICIO)/MAX 1055PX*/
     .hero {
         height: calc(100vh - 170.41px);
@@ -113,17 +90,6 @@
 }
 
 @media screen and (max-width: 771px) {
-/* HEADER/MAX 771PX */
-    .header {
-        nav {
-            ul {
-                li {
-                    padding: 25px;
-                }
-            }
-        }
-    }
-
 /* HERO(INICIO)/MAX 771PX */
     .hero {
         h1 {
@@ -140,19 +106,8 @@
 }
 
 @media screen and (max-width: 693px) {
-/* HEADER/MAX 693PX */
-    .header {
-        nav {
-            ul {
-                li {
-                    padding: 20px;
-                }
-            }
-        }
-    }
-
 /* HERO(INICIO)/MAX 693PX */
-    .header {
+    .hero {
         h1 {
             font-size: 45px;
         }
@@ -195,32 +150,7 @@
     }
 }
 
-@media screen and (max-width: 627px) {
-/* HEADER/MAX 627PX */
-    .header {
-        nav {
-            ul {
-                flex-direction: column;
-                text-align: center;
-                li {
-                    padding: 5px;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 585px) {
-/* HEADER/MAX 585PX */
-    .header {
-        a {
-            width: 250px;
-            img {
-                width: 250px;
-            }
-        }
-    }
-
 /* FOOTER/MAX 585PX */
     .footer {
         img {
@@ -270,16 +200,6 @@
 }
 
 @media screen and (max-width: 425px) {
-/* HEADER/MAX 425PX */
-    .header {
-        a {
-            width: 200px;
-            img {
-                width: 200px;
-            }
-        }
-    }
-
 /* FOOTER/MAX 425PX */
     .footer {
         img {
