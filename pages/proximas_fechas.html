@@ -19,16 +19,29 @@
     </head>
 
     <body>
-        <header class="header"> 
-            <a class="animate__animated animate__bounceInRight" href="../index.html"><img src="../images/anteojos.png" alt="Logo Turistearte"></a>
-
+        <header> 
             <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="detras_de_tba.html">Detras de TBA</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="proximas_fechas.html">Proximas fechas</a></li>
-                    <li><a href="salidas.html">Salidas</a></li>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Inicio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/detras_de_tba.html">Detrás de TBA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/proximas_fechas.html">Próximas Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/salidas.html">Salidas</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -47,7 +60,7 @@
                         <p>Amamos turistear siempre, pero… turistear con amigxs y familia es ALTO PLAN!</p>
                         <p>Dejemos de hacer siempre lo mismo! Propone una noche distinta y te garantizamos que la van a pasar bomba!</p>
                     </div>
-                    <a href="">¡Reservar!</a>
+                    <a href="#formulario">¡Reservar!</a>
                 </article>
                 <article class="fecha">
                     <div>
@@ -82,6 +95,52 @@
                     <a href="https://www.eventbrite.com.ar/e/chalecito-y-obelisco-un-monumento-un-inmigrante-y-un-caprichito-tickets-342331541857">¡Sacá tu entrada!</a>
                 </article>
             </section>
+
+            <form id="formulario">
+                <h4 class="h2">DEJANOS TU CONTACTO</h4>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Mail</label>
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Teléfono</label>
+                    <div class="col-sm-10">
+                    <input type="tel" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Fecha Estimada</label>
+                    <div class="col-sm-10">
+                    <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Salida Favorita</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">Tour del Terror</option>
+                            <option value="2">Tour Amores Turbios</option>
+                            <option value="3">Tour Chalecito&Obelisco</option>
+                            <option value="4">Tour Arte Urbano por Palermo</option>
+                            <option value="5">Tour de Comida Porteña</option>
+                            <option value="6">Experiencia Mate</option>
+                            <option value="7">Tour Arte en el Metro de Buenos Aires</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">¡RESERVÁ TU SALIDA CON NOSOTROS!</button>
+                </div>
+            </form>
         </main>
 
 <!------ FOOTER ------>

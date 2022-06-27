@@ -85,3 +85,29 @@
     background-color: #232744;
     color: #F7629B;
 }
+
+form {
+    margin: 0 50px;
+    h4 {
+        padding-bottom: 20px;
+        padding-top: 50px;
+        color: $color_texto;
+    }
+    div {
+        label {
+            font-weight: 700;
+            color: $color_texto;
+        }
+        div {
+            input {
+                color: $color_texto;
+            }
+        }
+    div {
+        button {
+            color: $color_texto;
+            font-weight: 700;
+        }
+    }
+    }
+}
