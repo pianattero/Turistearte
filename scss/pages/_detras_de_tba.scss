@@ -14,15 +14,11 @@
     background-attachment: fixed;   
     margin-bottom: 30px; 
     h1 {
-        color: $color_texto;
-        font-size: 60px;
-        font-weight: 700;
-        text-align: center;
+        @include texto($color_texto, 700, 60px, center);
     }
     p {
-        color: $color_texto;
-        text-align: center;
-        padding: 10px 0;
+        @include texto($color_texto, 400, 20px, center);
+        padding-top: 10px;
     }
 }
 
@@ -59,10 +55,9 @@
                 background-color: #F3CFD5;
             }
             h2 {
+                @include texto($color_texto, 700, 26px, center);
                 text-transform: uppercase;
-                font-weight: 700;
                 padding-top: 20px;
-                text-align: center;
             }
             img {
                 border-radius: 10%;
@@ -72,8 +67,7 @@
             }
         }
         p {
-            text-align: center;
-            font-size: 14px;
+            @include texto($color_texto, 400, 16px, center);
         }
     }
 }

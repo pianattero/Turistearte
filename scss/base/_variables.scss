@@ -4,3 +4,11 @@ $texto_boton_final: #FBF2F2;
 $boton_inicio: #ED5772;
 $boton_final: #EB4A80;
 
+// MIXINS
+@mixin texto($color, $weight, $size, $align) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+    text-align: $align;
+}
+

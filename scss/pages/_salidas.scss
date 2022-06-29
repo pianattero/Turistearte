@@ -14,15 +14,11 @@
     background-attachment: fixed;   
     margin-bottom: 30px; 
     h1 {
-        color: $color_texto;
-        font-size: 60px;
-        font-weight: 700;
-        text-align: center;
+        @include texto($color_texto, 700, 60px, center);
     }
     p {
-        color: $color_texto;
-        text-align: center;
-        padding: 10px 0;
+        @include texto($color_texto, 400, 20px, center);
+        padding-top: 10px;
     }
 }
 
@@ -84,18 +80,15 @@
     article {
         div {
             p {
-                text-align: center;
+                @include texto($color_texto, 400, 16px, center);
                 line-height: 1.6;
                 margin: 0 50px;
             }
         }
         h2 {
+            @include texto(#FFFBFB, 700, 30px, center);
             text-transform: uppercase;
             text-shadow: 2px 2px #EB4A80;
-            text-align: center;
-            font-size: 30px;
-            font-weight: 700;
-            color: #FFFBFB;
         }
     }
 }

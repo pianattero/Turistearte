@@ -14,15 +14,11 @@
     background-attachment: fixed;   
     margin-bottom: 30px; 
     h1 {
-        color: $color_texto;
-        font-size: 60px;
-        font-weight: 700;
-        text-align: center;
+        @include texto($color_texto, 700, 60px, center);
     }
     p {
-        color: $color_texto;
-        text-align: center;
-        padding: 10px 0;
+        @include texto($color_texto, 400, 20px, center);
+        padding-top: 10px;
         margin: 0;
     }
 }
@@ -52,27 +48,24 @@
     div {
         width: 1000px;
         h2 {
+            @include texto($color_texto, 700, 30px, left);
             padding-bottom: 10px;
-            color: $color_texto;
         }
         h3 {
-            padding-bottom: 20px;
-            color: $color_texto;
+            @include texto($color_texto, 400, 25px, left);
+            padding-bottom: 10px;
         }
         p {
+            @include texto($color_texto, 300, 18px, left);
             font-style: italic;
             padding-right: 50px;
-            padding-bottom: 10px;
-            text-align: left;
-            color: $color_texto;
         }
     }
     a {
+        @include texto($color_texto, 700, 20px, center);
         text-decoration: none;
-        font-weight: 700;
         padding: 10px;
         border-radius: 15px;
-        color: $color_texto;
         background-color: $boton_inicio;
         &:hover {
             color: $texto_boton_final;
@@ -87,27 +80,27 @@
 }
 
 form {
-    margin: 0 50px;
+    margin-top: 50px;
     h4 {
-        padding-bottom: 20px;
-        padding-top: 50px;
-        color: $color_texto;
+        @include texto($color_texto, 700, 35px, center);
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: $boton_inicio;
     }
     div {
         label {
-            font-weight: 700;
-            color: $color_texto;
-        }
-        div {
-            input {
-                color: $color_texto;
-            }
-        }
-    div {
-        button {
-            color: $color_texto;
-            font-weight: 700;
+            @include texto($color_texto, 700, 16px, left);
         }
     }
+}
+
+.botones {
+    @include texto($color_texto, 700, 18px, center);
+    background-color: white;
+    border: solid 1px $boton_inicio;
+    &:hover {
+        background-color: $boton_final;
+        color: $texto_boton_final;
     }
 }

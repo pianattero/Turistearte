@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 20vh);
+    height: calc(100vh - 80px);
     margin-bottom: 30px;
     background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
     background-position: center;
@@ -13,24 +13,16 @@
     background-size: cover;
     background-attachment: fixed;
     h1 {
-        color: $color_texto;
-        font-size: 60px;
-        font-weight: 700;
-        text-align: center;
+        @include texto($color_texto, 700, 60px, center);
         padding: 0 20px;
     }
     p {
-        color: $color_texto;
-        font-size: 20px;
-        font-weight: 400;
-        text-align: center;
+        @include texto($color_texto, 400, 20px, center);
         padding: 40px 150px;
     }
     a {
+        @include texto($color_texto, 700, 20px, center);
         text-decoration: none;
-        font-weight: 700;
-        font-size: 20px;
-        color: $color_texto;
         background-color: $boton_inicio;
         border-radius: 15px;
         padding: 10px;
@@ -53,7 +45,7 @@
         }
     div {
         h2 {
-            color: $color_texto;
+            @include texto($color_texto, 700, 30px, center);
             padding-bottom: 20px;
             padding-left: 50px;
         }
@@ -63,9 +55,8 @@
             align-items: center;
             text-align: center;
             p {
-                color: $color_texto;
-                text-align: center;
-                padding: 10px 50px;
+                @include texto($color_texto, 400, 20px, center);
+                padding: 10px 30px;
             }
         }
     }
@@ -89,9 +80,9 @@
 /* MAIN(INICIO)/RECORRIDOS(DESKTOP) */
 .recorridos {
     h2 {
-        text-align: center;
-        color: $color_texto;
-        padding-bottom: 30px;
+        @include texto($color_texto, 700, 30px, center);
+        padding-bottom: 10px;
+        padding-top: 20px;
     }
     article {
         display: flex;
@@ -120,16 +111,12 @@
         }
         div {
             p {
-                color: $color_texto;
-                font-size: 16px;
-                font-weight: 400;
-                text-align: center;
+                @include texto($color_texto, 400, 18px, center);
                 padding: 0px 20px;
             }
             a {
+                @include texto($color_texto, 700, 18px, center);
                 text-decoration: none;
-                color: $color_texto;
-                font-weight: 700;
                 background-color: $boton_inicio;
                 border-radius: 15px;
                 padding: 10px;
@@ -143,9 +130,7 @@
                 flex-direction: column;
                 align-items: center;
                 h3 {
-                    color: $color_texto;
-                    font-weight: 700;
-                    text-align: center;
+                    @include texto($color_texto, 700, 28px, center);
                     padding: 10px 10px 20px 10px;
                 }
                 img {
