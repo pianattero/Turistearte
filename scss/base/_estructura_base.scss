@@ -48,15 +48,23 @@ header {
 }
 
 .menu {
-    justify-content: space-between;
+    li {
+        a {
+            color: $color_texto;
+            &:hover {
+                color: $principal;
+            }
+        }
+    }
 }
 
 .botones {
+    @include texto($color_texto, 700, 18px, center);
+    text-transform: uppercase;
     background-color: white;
-    border: solid 1px $boton_inicio;
-    color: $color_texto;
+    border: solid 1px $principal;
     &:hover {
-        background-color: $boton_final;
+        background-color: $principal;
         color: $texto_boton_final;
     }
 }

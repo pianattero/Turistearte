@@ -33,11 +33,7 @@
     background-position: center;
     background-repeat: repeat;
     border-radius: 10px;
-    margin: 30px;
-    transition: 1s;
-    &:hover {
-        transform: scale(1, 1);
-    }
+    margin: 50px 30px 10px 30px;
 }
 
 .hero_amores {
@@ -88,7 +84,7 @@
         h2 {
             @include texto(#FFFBFB, 700, 30px, center);
             text-transform: uppercase;
-            text-shadow: 2px 2px #EB4A80;
+            text-shadow: 2px 2px $principal;
         }
     }
 }

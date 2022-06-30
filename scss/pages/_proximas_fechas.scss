@@ -42,7 +42,7 @@
     align-items: center;
     margin: 0px 100px 30px 100px;
     padding: 20px;
-    border: solid 2px #F7629B;
+    border: solid 2px $principal;
     border-radius: 10px;
     background-color: #FBF2F2;
     div {
@@ -62,31 +62,25 @@
         }
     }
     a {
-        @include texto($color_texto, 700, 20px, center);
         text-decoration: none;
         padding: 10px;
         border-radius: 15px;
-        background-color: $boton_inicio;
-        &:hover {
-            color: $texto_boton_final;
-            background-color: $boton_final;
-        }
     }
 }
 
 .badge {
-    background-color: #232744;
-    color: #F7629B;
+    background-color: $color_texto;
+    color: $principal;
 }
 
 form {
     margin-top: 50px;
     h4 {
-        @include texto($color_texto, 700, 35px, center);
+        @include texto($color_texto, 700, 30px, center);
         padding: 10px;
         margin-bottom: 30px;
         border-radius: 10px;
-        background-color: $boton_inicio;
+        background-color: $principal;
     }
     div {
         label {
@@ -95,12 +89,3 @@ form {
     }
 }
 
-.botones {
-    @include texto($color_texto, 700, 18px, center);
-    background-color: white;
-    border: solid 1px $boton_inicio;
-    &:hover {
-        background-color: $boton_final;
-        color: $texto_boton_final;
-    }
-}

@@ -32,17 +32,24 @@ header nav div div ul li a {
   font-weight: 700;
 }
 
-.menu {
-  justify-content: space-between;
-}
-
-.botones {
-  background-color: white;
-  border: solid 1px #ED5772;
+.menu li a {
   color: #232744;
 }
-.botones:hover {
-  background-color: #EB4A80;
+.menu li a:hover {
+  color: #ED5772;
+}
+
+.botones, .opinion a, .recorridos article div a, .hero a {
+  color: #232744;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  border: solid 1px #ED5772;
+}
+.botones:hover, .opinion a:hover, .recorridos article div a:hover, .hero a:hover {
+  background-color: #ED5772;
   color: #FBF2F2;
 }
 
@@ -107,20 +114,9 @@ header nav div div ul li a {
   padding: 40px 150px;
 }
 .hero a {
-  color: #232744;
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
   text-decoration: none;
-  background-color: #ED5772;
   border-radius: 15px;
   padding: 10px;
-  transition: 1s;
-}
-.hero a:hover {
-  background-color: #EB4A80;
-  color: #FBF2F2;
-  padding: 15px;
 }
 
 /* MAIN(INICIO)/PROPUESTA(DESKTOP) */
@@ -128,15 +124,14 @@ header nav div div ul li a {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 20px 50px;
 }
 .propuesta div h2 {
   color: #232744;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  padding-bottom: 20px;
-  padding-left: 50px;
+  padding: 0 30px 20px 10px;
 }
 .propuesta div div {
   display: flex;
@@ -149,20 +144,7 @@ header nav div div ul li a {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  padding: 10px 30px;
-}
-
-/* MAIN(INICIO)/GALERIA(DESKTOP) */
-.galeria div {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-  padding: 30px 0 30px 0;
-}
-.galeria div img {
-  width: 400px;
   padding: 10px;
-  border-radius: 10%;
 }
 
 /* MAIN(INICIO)/RECORRIDOS(DESKTOP) */
@@ -208,18 +190,9 @@ header nav div div ul li a {
   padding: 0px 20px;
 }
 .recorridos article div a {
-  color: #232744;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
   text-decoration: none;
-  background-color: #ED5772;
   border-radius: 15px;
   padding: 10px;
-}
-.recorridos article div a:hover {
-  background-color: #EB4A80;
-  color: #FBF2F2;
 }
 .recorridos article div div {
   display: flex;
@@ -367,25 +340,16 @@ header nav div div ul li a {
   justify-content: space-between;
   align-items: center;
   background-color: #FBF2F2;
-  border: solid 2px #F7629B;
+  border: solid 2px #ED5772;
   border-radius: 10px;
   padding: 20px;
   margin: 20px 50px;
 }
 .opinion a {
-  color: #232744;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
   text-decoration: none;
   padding: 10px;
-  background-color: #ED5772;
   border-radius: 15px;
   margin-bottom: 10px;
-}
-.opinion a:hover {
-  background-color: #EB4A80;
-  color: #FBF2F2;
 }
 .opinion img {
   border-radius: 10px;
@@ -466,7 +430,7 @@ header nav div div ul li a {
   align-items: center;
   margin: 0px 100px 30px 100px;
   padding: 20px;
-  border: solid 2px #F7629B;
+  border: solid 2px #ED5772;
   border-radius: 10px;
   background-color: #FBF2F2;
 }
@@ -496,23 +460,14 @@ header nav div div ul li a {
   padding-right: 50px;
 }
 .fecha a {
-  color: #232744;
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
   text-decoration: none;
   padding: 10px;
   border-radius: 15px;
-  background-color: #ED5772;
-}
-.fecha a:hover {
-  color: #FBF2F2;
-  background-color: #EB4A80;
 }
 
 .badge {
   background-color: #232744;
-  color: #F7629B;
+  color: #ED5772;
 }
 
 form {
@@ -521,7 +476,7 @@ form {
 form h4 {
   color: #232744;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
@@ -533,19 +488,6 @@ form div label {
   font-weight: 700;
   font-size: 16px;
   text-align: left;
-}
-
-.botones {
-  color: #232744;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  background-color: white;
-  border: solid 1px #ED5772;
-}
-.botones:hover {
-  background-color: #EB4A80;
-  color: #FBF2F2;
 }
 
 /* MAIN(SALIDAS)/HERO(DESKTOP) */
@@ -589,11 +531,7 @@ form div label {
   background-position: center;
   background-repeat: repeat;
   border-radius: 10px;
-  margin: 30px;
-  transition: 1s;
-}
-.hero_terror:hover, .hero_metro:hover, .hero_mate:hover, .hero_comida:hover, .hero_palermo:hover, .hero_chalecito:hover, .hero_amores:hover {
-  transform: scale(1, 1);
+  margin: 50px 30px 10px 30px;
 }
 
 .hero_amores {
@@ -640,7 +578,7 @@ form div label {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px #EB4A80;
+  text-shadow: 2px 2px #ED5772;
 }
 
 /******** MEDIA QUERIES ********/
@@ -755,17 +693,20 @@ form div label {
   }
 }
 @media screen and (max-width: 585px) {
+  /* HEADER/MAX 585PX */
+  header nav div img {
+    width: 250px;
+  }
   /* FOOTER/MAX 585PX */
   .footer img {
     width: 250px;
   }
-  .redes h5 {
-    font-size: 12px;
-    margin: 0;
+  .redes h4 {
+    padding-bottom: 4px;
   }
   .redes a img {
     width: 45px;
-    margin: 0;
+    margin-left: 5px;
   }
   /* OPINIONES(REVIEWS)/MAX 585PX*/
   .opinion {
@@ -791,15 +732,13 @@ form div label {
   }
 }
 @media screen and (max-width: 425px) {
+  /* HEADER/MAX 425PX */
+  header nav div img {
+    width: 200px;
+  }
   /* FOOTER/MAX 425PX */
   .footer img {
     width: 200px;
-  }
-  .redes h5 {
-    font-size: 10px;
-  }
-  .redes a img {
-    width: 35px;
   }
 }
 @media screen and (max-width: 420px) {

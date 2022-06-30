@@ -1,8 +1,7 @@
 // COLORES
 $color_texto: #232744;
 $texto_boton_final: #FBF2F2;
-$boton_inicio: #ED5772;
-$boton_final: #EB4A80;
+$principal: #ED5772;
 
 // MIXINS
 @mixin texto($color, $weight, $size, $align) {
