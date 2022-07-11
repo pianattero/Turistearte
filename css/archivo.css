@@ -24,18 +24,15 @@ body {
 header {
   background-color: #FFFBFB;
 }
-header nav div img {
+header a img {
   width: 300px;
 }
-header nav div div ul li a {
+
+#menu li a {
   color: #232744;
   font-weight: 700;
 }
-
-.menu li a {
-  color: #232744;
-}
-.menu li a:hover {
+#menu li a:hover {
   color: #ED5772;
 }
 

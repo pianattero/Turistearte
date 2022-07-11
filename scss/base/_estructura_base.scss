@@ -28,29 +28,18 @@ body {
 /* HEADER(DESKTOP) */
 header {
     background-color: #FFFBFB;
-    nav {
-        div {
-            img {
-                width: 300px;
-            }
-            div {
-                ul {
-                    li {
-                        a {
-                            color: $color_texto;
-                            font-weight: 700;
-                        }
-                    }
-                }
-            }
+    a {
+        img {
+            width: 300px;
         }
     }
 }
 
-.menu {
+#menu {
     li {
         a {
             color: $color_texto;
+            font-weight: 700;
             &:hover {
                 color: $principal;
             }
