@@ -14,10 +14,12 @@
     .hero {
         height: calc(100vh - 170.41px);
     }
+}
 
-/* OPINIONES(REVIEWS)/MAX 1055PX*/
-    .opinion div {
-        flex-direction: column;
+@media screen and (max-width: 991px) {
+    /* HERO/MAX 991PX*/
+    .hero {
+        height: calc(100vh - 130px);
     }
 }
 
@@ -41,7 +43,7 @@
             font-size: 56px;
         }
         p {
-            font-size: 17px;
+            font-size: 18px;
             padding: 40px 100px;
         }
         a {
@@ -96,7 +98,7 @@
             font-size: 50px;
         }
         p {
-            font-size: 15px;
+            font-size: 17px;
             padding: 40px 80px;
         }
         a {
@@ -109,11 +111,14 @@
 /* HERO(INICIO)/MAX 693PX */
     .hero {
         h1 {
-            font-size: 45px;
+            font-size: 50px;
         }
         p {
-            font-size: 15px;
-            padding: 40px 60px;
+            font-size: 16px;
+            padding: 20px 30px;
+        }
+        a {
+            font-size: 14px;
         }
     }
 
@@ -138,9 +143,6 @@
 /* OPINIONES(REVIEWS)/MAX 693PX*/
     .opinion {
         div {
-            img {
-                width: 100%;
-            }
             div {
                 p {
                     padding: 20px 10px 0 10px;
@@ -187,15 +189,6 @@
     }
 }
 
-@media screen and (max-width: 545px) {
-/* HERO(INCIO)/MAX 545PX */
-    .hero {
-        p {
-            padding: 40px 40px;
-        }
-    }
-}
-
 @media screen and (max-width: 502px) {
 /* HERO(PROXIMAS_FECHAS)/MAX 502PX */
     .hero_prox_fechas {
@@ -205,6 +198,14 @@
         }
         p {
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .hero {
+        p {
+            margin: 0;
         }
     }
 }
@@ -229,12 +230,6 @@
 }
 
 @media screen and (max-width: 420px) {
-/* HERO/MAX 420PX */
-    .hero {
-        p {
-            padding: 40px 40px;
-        }
-    }
 
 /* GALERIA(INICIO)/MAX 420PX */
     .galeria {

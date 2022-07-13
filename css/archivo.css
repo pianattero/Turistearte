@@ -150,8 +150,7 @@ header a img {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 20px;
+  margin-top: 50px;
 }
 .recorridos article {
   display: flex;
@@ -166,7 +165,7 @@ header a img {
   align-items: center;
   margin: 30px 30px 50px 30px;
   width: 400px;
-  height: 680px;
+  height: 650px;
   border: solid 2px #ED5772;
   border-radius: 15px;
   box-shadow: 11px 11px 0px -4px rgba(237, 87, 114, 0.52);
@@ -185,6 +184,7 @@ header a img {
   font-size: 18px;
   text-align: center;
   padding: 0px 20px;
+  margin: 0;
 }
 .recorridos article div a {
   text-decoration: none;
@@ -334,13 +334,21 @@ header a img {
 .opinion {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  background-color: #FBF2F2;
-  border: solid 2px #ED5772;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 50px;
+  margin: 20px 80px 50px 80px;
+}
+.opinion figure blockquote p {
+  color: #232744;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  line-height: 4vh;
+}
+.opinion img {
+  width: 150px;
+  margin-bottom: 20px;
+  transition: 1s;
 }
 .opinion a {
   text-decoration: none;
@@ -348,33 +356,11 @@ header a img {
   border-radius: 15px;
   margin-bottom: 10px;
 }
-.opinion img {
-  border-radius: 10px;
-}
-.opinion div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.opinion div div {
-  flex-direction: column;
-}
-.opinion div div h2 {
-  color: #232744;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.opinion div div p {
-  color: #232744;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  padding: 20px 50px 0px 50px;
-  font-style: italic;
-  line-height: 4vh;
+
+.estrellas_animadas {
+  animation: heartBeat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 /* MAIN(PROXIMAS_FECHAS)/HERO(DESKTOP) */
@@ -590,9 +576,11 @@ form div label {
   .hero {
     height: calc(100vh - 170.41px);
   }
-  /* OPINIONES(REVIEWS)/MAX 1055PX*/
-  .opinion div {
-    flex-direction: column;
+}
+@media screen and (max-width: 991px) {
+  /* HERO/MAX 991PX*/
+  .hero {
+    height: calc(100vh - 130px);
   }
 }
 @media screen and (max-width: 986px) {
@@ -610,7 +598,7 @@ form div label {
     font-size: 56px;
   }
   .hero p {
-    font-size: 17px;
+    font-size: 18px;
     padding: 40px 100px;
   }
   .hero a {
@@ -652,7 +640,7 @@ form div label {
     font-size: 50px;
   }
   .hero p {
-    font-size: 15px;
+    font-size: 17px;
     padding: 40px 80px;
   }
   .hero a {
@@ -662,11 +650,14 @@ form div label {
 @media screen and (max-width: 693px) {
   /* HERO(INICIO)/MAX 693PX */
   .hero h1 {
-    font-size: 45px;
+    font-size: 50px;
   }
   .hero p {
-    font-size: 15px;
-    padding: 40px 60px;
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+  .hero a {
+    font-size: 14px;
   }
   /* PROPUESTA(INICIO)/MAX 693PX */
   .propuesta > div {
@@ -682,9 +673,6 @@ form div label {
     padding: 10px;
   }
   /* OPINIONES(REVIEWS)/MAX 693PX*/
-  .opinion div img {
-    width: 100%;
-  }
   .opinion div div p {
     padding: 20px 10px 0 10px;
   }
@@ -710,12 +698,6 @@ form div label {
     margin: 20px 20px;
   }
 }
-@media screen and (max-width: 545px) {
-  /* HERO(INCIO)/MAX 545PX */
-  .hero p {
-    padding: 40px 40px;
-  }
-}
 @media screen and (max-width: 502px) {
   /* HERO(PROXIMAS_FECHAS)/MAX 502PX */
   .hero_prox_fechas {
@@ -726,6 +708,11 @@ form div label {
   }
   .hero_prox_fechas p {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 432px) {
+  .hero p {
+    margin: 0;
   }
 }
 @media screen and (max-width: 425px) {
@@ -739,10 +726,6 @@ form div label {
   }
 }
 @media screen and (max-width: 420px) {
-  /* HERO/MAX 420PX */
-  .hero p {
-    padding: 40px 40px;
-  }
   /* GALERIA(INICIO)/MAX 420PX */
   .galeria div img {
     width: 100%;

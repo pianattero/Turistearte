@@ -31,13 +31,22 @@
 .opinion {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    background-color: #FBF2F2;
-    border:solid 2px $principal;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 50px;
+    margin: 20px 80px 50px 80px;
+    figure {
+        blockquote {
+            p {
+                @include texto($color_texto, 400, 18px, center);
+                font-style: italic;
+                line-height: 4vh;
+            }
+        }
+    }
+    img {
+        width: 150px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
     a {
         @extend .botones;
         text-decoration: none;
@@ -45,26 +54,10 @@
         border-radius: 15px;
         margin-bottom: 10px;
     }
-    img {
-        border-radius: 10px;
-    }
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        div {
-            flex-direction: column;
-            h2 {
-                @include texto($color_texto, 700, 30px, center);
-                text-transform: uppercase;
-            }
-            p {
-                @include texto($color_texto, 400, 18px, center);
-                padding: 20px 50px 0px 50px;
-                font-style: italic;
-                line-height: 4vh;
-            }
-        }
-    }
+}
+
+.estrellas_animadas {
+    animation: heartBeat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
