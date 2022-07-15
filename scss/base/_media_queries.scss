@@ -17,6 +17,13 @@
 }
 
 @media screen and (max-width: 991px) {
+    /* HEADER/MAX 991PX*/
+    .logo_animado {
+        animation: slideInDown;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
     /* HERO/MAX 991PX*/
     .hero {
         height: calc(100vh - 130px);

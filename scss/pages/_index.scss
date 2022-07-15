@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 98px);
     margin-bottom: 30px;
     background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
     background-position: center;
@@ -113,4 +113,10 @@
             }
         }
     }
+}
+
+.logo_animado {
+    animation: slideInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }

@@ -33,7 +33,7 @@
     background-position: center;
     background-repeat: repeat;
     border-radius: 10px;
-    margin: 50px 30px 10px 30px;
+    margin: 60px 30px 10px 30px;
 }
 
 .hero_amores {
@@ -79,6 +79,9 @@
                 @include texto($color_texto, 400, 16px, center);
                 line-height: 1.6;
                 margin: 0 50px;
+                &:hover {
+                    font-weight: 700;
+                }
             }
         }
         h2 {

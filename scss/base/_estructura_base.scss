@@ -27,12 +27,20 @@ body {
 
 /* HEADER(DESKTOP) */
 header {
+    height: auto;
     background-color: #FFFBFB;
     a {
         img {
+            margin: 10px;
             width: 300px;
         }
     }
+}
+
+.logo_animado {
+    animation: slideInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
 #menu {

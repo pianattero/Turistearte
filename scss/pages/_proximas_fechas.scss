@@ -68,6 +68,12 @@
     }
 }
 
+.boton_animado {
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 .badge {
     background-color: $color_texto;
     color: $principal;

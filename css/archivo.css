@@ -22,10 +22,18 @@ body {
 
 /* HEADER(DESKTOP) */
 header {
+  height: auto;
   background-color: #FFFBFB;
 }
 header a img {
+  margin: 10px;
   width: 300px;
+}
+
+.logo_animado {
+  animation: slideInLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 #menu li a {
@@ -88,7 +96,7 @@ header a img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 98px);
   margin-bottom: 30px;
   background: linear-gradient(rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.33)), url(../images/plantilla.jpg);
   background-position: center;
@@ -207,6 +215,12 @@ header a img {
   width: 350px;
   height: 350px;
   border-radius: 5%;
+}
+
+.logo_animado {
+  animation: slideInLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 /* MAIN(DETRAS_DE_TBA)/HERO(DESKTOP) */
@@ -448,6 +462,12 @@ header a img {
   border-radius: 15px;
 }
 
+.boton_animado {
+  animation: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .badge {
   background-color: #232744;
   color: #ED5772;
@@ -514,7 +534,7 @@ form div label {
   background-position: center;
   background-repeat: repeat;
   border-radius: 10px;
-  margin: 50px 30px 10px 30px;
+  margin: 60px 30px 10px 30px;
 }
 
 .hero_amores {
@@ -555,6 +575,9 @@ form div label {
   line-height: 1.6;
   margin: 0 50px;
 }
+.salidas article div p:hover {
+  font-weight: 700;
+}
 .salidas article h2 {
   color: #FFFBFB;
   font-weight: 700;
@@ -578,6 +601,12 @@ form div label {
   }
 }
 @media screen and (max-width: 991px) {
+  /* HEADER/MAX 991PX*/
+  .logo_animado {
+    animation: slideInDown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
   /* HERO/MAX 991PX*/
   .hero {
     height: calc(100vh - 130px);
