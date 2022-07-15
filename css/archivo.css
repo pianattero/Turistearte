@@ -217,12 +217,6 @@ header a img {
   border-radius: 5%;
 }
 
-.logo_animado {
-  animation: slideInLeft;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
 /* MAIN(DETRAS_DE_TBA)/HERO(DESKTOP) */
 .hero_detras_tba {
   display: flex;
@@ -425,7 +419,7 @@ header a img {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 100px 30px 100px;
+  margin: 0 20px 30px 20px;
   padding: 20px;
   border: solid 2px #ED5772;
   border-radius: 10px;
@@ -588,6 +582,23 @@ form div label {
 }
 
 /******** MEDIA QUERIES ********/
+@media screen and (max-width: 1205px) {
+  /* FECHAS(PROXIMAS_FECHAS)/MAX 1205PX*/
+  .fecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fecha div h2 {
+    text-align: center;
+  }
+  .fecha div h3 {
+    text-align: center;
+  }
+  .fecha div p {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 1105px) {
   /* FECHAS(PROXIMAS_FECHAS)/MAX 1105PX*/
   .fecha div {
@@ -617,9 +628,6 @@ form div label {
   .fecha div {
     width: 800px;
   }
-  .fecha {
-    margin: 0px 80px 30px 80px;
-  }
 }
 @media screen and (max-width: 900px) {
   /* HERO(INICIO)/MAX 900PX */
@@ -633,26 +641,28 @@ form div label {
   .hero a {
     font-size: 17px;
   }
+  /* MAIN(INICIO)/MAX 900PX */
+  .propuesta div h2 {
+    font-size: 28px;
+  }
+  .propuesta div div p {
+    font-size: 18px;
+  }
+  .recorridos h2 {
+    font-size: 28px;
+  }
+  .recorridos article div div h3 {
+    font-size: 26px;
+  }
+  .recorridos article div p {
+    font-size: 18px;
+  }
+  .recorridos article div a {
+    font-size: 17px;
+  }
   /* FECHAS(PROXIMAS_FECHAS)/MAX 900PX*/
   .fecha div {
     width: auto;
-  }
-  .fecha {
-    margin: 0px 40px 30px 40px;
-  }
-}
-@media screen and (max-width: 819px) {
-  /* RECORRIDOS(INICIO)/MAX 819PX */
-  .recorridos h2 {
-    padding-bottom: 10px;
-  }
-  .recorridos article {
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 5px 15px 5px;
-  }
-  .recorridos article > div {
-    margin: 10px 5px 30px 5px;
   }
 }
 @media screen and (max-width: 799px) {
@@ -675,18 +685,33 @@ form div label {
   .hero a {
     font-size: 15px;
   }
+  .propuesta div h2 {
+    font-size: 26px;
+  }
+  .propuesta div div p {
+    font-size: 17px;
+  }
+  .recorridos h2 {
+    font-size: 26px;
+  }
+  .recorridos article div div h3 {
+    font-size: 24px;
+  }
+  .recorridos article div p {
+    font-size: 17px;
+  }
+  .recorridos article div a {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 693px) {
   /* HERO(INICIO)/MAX 693PX */
   .hero h1 {
-    font-size: 50px;
+    margin: 0;
+    padding: 0 10px;
   }
   .hero p {
-    font-size: 16px;
-    padding: 20px 30px;
-  }
-  .hero a {
-    font-size: 14px;
+    padding: 10px 20px;
   }
   /* PROPUESTA(INICIO)/MAX 693PX */
   .propuesta > div {
@@ -740,8 +765,14 @@ form div label {
   }
 }
 @media screen and (max-width: 432px) {
-  .hero p {
-    margin: 0;
+  /* RECORRIDOS(INICIO)/MAX 819PX */
+  .recorridos article > div {
+    width: 370px;
+    height: 630px;
+  }
+  .recorridos article div div img {
+    width: 320px;
+    height: 320px;
   }
 }
 @media screen and (max-width: 425px) {
